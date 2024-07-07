@@ -15,6 +15,7 @@ h1 {
   font-weight: bold;
   margin-bottom: 1rem;
   color: #343a40;
+  
 }
 
 p {
@@ -82,14 +83,6 @@ p {
 
 }
 
-
-.login{
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 100vh;
-}
-
 .login-title {
   font-size: 2rem;
   font-weight: bold;
@@ -105,7 +98,7 @@ p {
 
 .login-input {
   border-radius: 0.25rem;
-  border: 1px solid #ced4da;
+  border: 2px solid #ced4da;
   padding: 0.75rem 1rem;
   margin-bottom: 1rem;
 }
@@ -170,13 +163,7 @@ p {
 
 /* About Us Page Styles */
 
-.about{
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 100vh;
 
-}
 
 .about-us {
   padding: 20px;
@@ -184,12 +171,9 @@ p {
   border-radius: 8px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
   margin-top: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
 }
 
-.about-us h2 {
-  color: #007bff;
-}
-
-.about-us p {
-  color: #555;
-}

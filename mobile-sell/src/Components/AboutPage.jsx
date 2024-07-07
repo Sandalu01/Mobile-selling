@@ -5,7 +5,6 @@ import "bootstrap/dist/css/bootstrap.min.css";
 
 const AboutUs = () => {
   return (
-    <div className="about">
     <Container className="about-us">
       <Row className="justify-content-md-center">
         <Col md="8">
@@ -34,7 +33,6 @@ const AboutUs = () => {
         </Col>
       </Row>
     </Container>
-    </div>
   );
 };
 
