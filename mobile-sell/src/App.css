@@ -176,3 +176,20 @@ p {
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 
 }
+
+/* About Us Page Styles */
+.about-us {
+  padding: 20px;
+  background-color: white;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  margin-top: 20px;
+}
+
+.about-us h2 {
+  color: #007bff;
+}
+
+.about-us p {
+  color: #555;
+}
