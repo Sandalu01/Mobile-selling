@@ -68,60 +68,7 @@ p {
 
 
 
-/* src/components/LoginPage.css */
-.login-container {
-  width: 100%;
-  max-width: 600px;
-  margin-top: 5rem ;
-  background-color: #ffffff;
-  padding: 1rem;
-  border-radius: 10px;
-  box-shadow: 0 4px 8px rgba(24, 24, 24, 0.1);
-  height: 100vh;
 
-
-
-}
-
-.login-title {
-  font-size: 2rem;
-  font-weight: bold;
-  margin-bottom: 1.5rem;
-  color: #343a40;
-  text-align: center;
-}
-
-.login-label {
-  font-weight: bold;
-  color: #495057;
-}
-
-.login-input {
-  border-radius: 0.25rem;
-  border: 2px solid #ced4da;
-  padding: 0.75rem 1rem;
-  margin-bottom: 1rem;
-}
-
-.login-input:focus {
-  border-color: #80bdff;
-  box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25);
-}
-
-.login-button {
-  background-color: #007bff;
-  border-color: #007bff;
-  width: 100%;
-  padding: 0.75rem;
-  font-size: 1.2rem;
-  border-radius: 0.25rem;
-  transition: background-color 0.3s, border-color 0.3s;
-}
-
-.login-button:hover {
-  background-color: #0056b3;
-  border-color: #0056b3;
-}
 
 /* about */
 .about{
