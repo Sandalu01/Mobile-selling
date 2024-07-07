@@ -69,12 +69,15 @@ p {
 
 /* src/components/LoginPage.css */
 .login-container {
-  margin-top: 5rem;
-  max-width: 400px;
+  width: 100%;
+  max-width: 600px;
+  margin-top: 5rem ;
   background-color: #ffffff;
-  padding: 2rem;
+  padding: 1rem;
   border-radius: 10px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 4px 8px rgba(24, 24, 24, 0.1);
+  height: 100vh;
+
 
 
 }
@@ -139,13 +142,7 @@ p {
 /* signup */
 
 /* src/components/SignupForm.css */
-.signup {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  min-height: 100vh; /* Ensure the div takes the full viewport height */
-  background-color: #f8f9fa; /* Optional: add a background color */
-}
+
 
 
 
@@ -157,6 +154,7 @@ p {
   background-color: white;
   border-radius: 8px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  height: 100vh;
 }
 
 .signup-title {
@@ -168,16 +166,7 @@ p {
   text-align: center;
 }
 
-.login-fo{
-  width: 100%;
-  max-width: 600px; /* Control the width of the form */
-  padding: 20px;
-  margin-left: 25%;
-  background-color: white;
-  border-radius: 8px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 
-}
 
 /* About Us Page Styles */
 

@@ -5,7 +5,7 @@ import { Container, Form, Button } from 'react-bootstrap';
 const SignupPage = () => {
   return (
 
-    <div className='signup'>
+   
       <Container>
       <div className="signup-form">
       <h2 className='signup-title'>Sign Up</h2>
@@ -38,7 +38,7 @@ const SignupPage = () => {
       </div>
     </Container>
 
-    </div>
+  
     
   );
 };
