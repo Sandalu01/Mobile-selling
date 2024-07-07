@@ -178,6 +178,15 @@ p {
 }
 
 /* About Us Page Styles */
+
+.about{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+
+}
+
 .about-us {
   padding: 20px;
   background-color: white;
