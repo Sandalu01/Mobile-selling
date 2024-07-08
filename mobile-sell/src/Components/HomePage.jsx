@@ -12,7 +12,7 @@ const HomePage = () => {
     <Container className="mt-5">
       <Row className="mb-4">
         <Col>
-          <h1>Welcome to Mobile Store</h1>
+          <h1>Welcome to Sandalu's Store 😊</h1>
           <p>Your one-stop shop for the latest mobile phones.</p>
         </Col>
       </Row>
