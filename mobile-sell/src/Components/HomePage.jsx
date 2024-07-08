@@ -5,6 +5,7 @@ import { Container, Row, Col, Card, Button } from 'react-bootstrap';
 
 
 
+
 const HomePage = () => {
   return (
    
@@ -18,7 +19,7 @@ const HomePage = () => {
       <Row>
         <Col md={4}>
           <Card>
-            <Card.Img variant="top" src="https://via.placeholder.com/150" />
+            <Card.Img variant="top" src="https://media.istockphoto.com/id/827502902/photo/mobile-smartphone-in-electronic-store.jpg?s=612x612&w=0&k=20&c=G3jkr0uLHBR-c8Bi0405JvhL5F-sB7Ln-bYTRbqt3hw=" />
             <Card.Body>
               <Card.Title>Latest Models</Card.Title>
               <Card.Text>
@@ -30,7 +31,7 @@ const HomePage = () => {
         </Col>
         <Col md={4}>
           <Card>
-            <Card.Img variant="top" src="https://via.placeholder.com/150" />
+            <Card.Img variant="top" src="https://media.istockphoto.com/id/1974018816/photo/a-lot-of-smartphone-models-on-display-at-the-exhibition-stand-of-an-electronics-store.jpg?s=612x612&w=0&k=20&c=MXodjllbFmCKYQVV0fMQzZliIkm6-oH2X6gqugqAc7g=" />
             <Card.Body>
               <Card.Title>Best Sellers</Card.Title>
               <Card.Text>
@@ -42,7 +43,7 @@ const HomePage = () => {
         </Col>
         <Col md={4}>
           <Card>
-            <Card.Img variant="top" src="https://via.placeholder.com/150" />
+            <Card.Img variant="top" src="https://img.freepik.com/free-psd/gradient-black-friday-template-design_23-2149706962.jpg?size=626&ext=jpg&ga=GA1.1.6752989.1717871726&semt=ais_user" />
             <Card.Body>
               <Card.Title>Special Offers</Card.Title>
               <Card.Text>
@@ -54,7 +55,7 @@ const HomePage = () => {
         </Col>
       </Row>
     </Container>
-    
+
   );
 };
 
