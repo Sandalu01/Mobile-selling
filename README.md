@@ -26,7 +26,7 @@ Follow these instructions to get a copy of the project up and running on your lo
 1. Clone the repository:
 
     ```bash
-    git clone https://github.com/yourusername/mobilemart.git
+    git clone https://github.com/Sandalu01/Mobile-selling.git
     ```
 
 2. Navigate to the project directory:
