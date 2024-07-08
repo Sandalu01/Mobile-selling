@@ -58,10 +58,11 @@ const Signup = () => {
                     required
                   />
                 </Form.Group>
-
+                <div className="d-flex justify-content-center">
                 <Button variant="primary" type="submit" className="mt-4" block>
                   Sign Up
                 </Button>
+                </div>
               </Form>
               <div className="mt-3 text-center">
                 <Link to="/login">Already have an account? Login</Link>

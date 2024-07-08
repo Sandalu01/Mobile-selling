@@ -43,10 +43,11 @@ const Login = () => {
                     required
                   />
                 </Form.Group>
-
+                <div className="d-flex justify-content-center">
                 <Button variant="primary" type="submit" className="mt-4" >
                   Login
                 </Button>
+                </div>
               </Form>
               <div className="mt-3 text-center">
                 <Link to="/signup">Don't have an account? Sign up</Link>
