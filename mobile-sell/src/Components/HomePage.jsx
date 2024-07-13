@@ -1,8 +1,12 @@
 // src/components/HomePage.js
 import React from 'react';
-import { Container, Row, Col, Card, Button ,ExampleCarouselImage} from 'react-bootstrap';
+import { useState } from 'react';
+
+import { Container, Row, Col, Card, Button,Carousel } from 'react-bootstrap';
 import Accordion from 'react-bootstrap/Accordion';
 
+
+import ExampleCarouselImage from './ExampleCarouselImage';
 
 
 
