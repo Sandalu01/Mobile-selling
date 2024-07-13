@@ -80,6 +80,7 @@ const HomePage = () => {
        </Accordion.Body>
      </Accordion.Item>
    </Accordion>
+
    </Container>
    </>
 
