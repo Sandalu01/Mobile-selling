@@ -9,7 +9,7 @@ const HomePage = () => {
   <>
    
     <Container className="mt-5">
-      <Row className="mb-4">
+      <Row className="mb-4 ">
         <Col>
           <h1>Welcome to Sandalu's Store 😊</h1>
           <p>Your one-stop shop for the latest mobile phones.</p>
@@ -53,8 +53,8 @@ const HomePage = () => {
           </Card>
         </Col>
       </Row>
-    </Container>
-     <Accordion defaultActiveKey="0">
+   
+     <Accordion defaultActiveKey="0" className='mt-5'>
      <Accordion.Item eventKey="0">
        <Accordion.Header>Accordion Item #1</Accordion.Header>
        <Accordion.Body>
@@ -80,6 +80,7 @@ const HomePage = () => {
        </Accordion.Body>
      </Accordion.Item>
    </Accordion>
+   </Container>
    </>
 
   );
