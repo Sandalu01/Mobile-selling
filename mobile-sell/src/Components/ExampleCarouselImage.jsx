@@ -6,7 +6,7 @@ const ExampleCarouselImage = () => {
     return (
         <Carousel>
             <Carousel.Item>
-  
+
             <div style={{ display: 'flex', justifyContent: 'center', alignItems: 'center', height: '100%' }}>
         <img
             style={{ width: '500px', height: '700px' }}
@@ -23,7 +23,6 @@ const ExampleCarouselImage = () => {
             alt="Third slide"
         />
     </div>
-
 
             </Carousel.Item>
             <Carousel.Item>
