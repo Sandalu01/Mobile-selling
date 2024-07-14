@@ -10,11 +10,11 @@ const Login = () => {
 
   const handleSubmit = (event) => {
     event.preventDefault();
-    // Add your login logic here
+
     console.log('Email:', email, 'Password:', password);
   };
 
-  return (
+  return (  
     <Container>
       <Row className="justify-content-md-center">
         <Col xs={12} md={6}>
