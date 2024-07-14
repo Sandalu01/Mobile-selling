@@ -9,11 +9,16 @@ import ExampleCarouselImage from './ExampleCarouselImage';
 
 const HomePage = () => {
 
+    const navigateToPage = (url) => {
+    window.location.href = url;
+  };
+
   const [index, setIndex] = useState(0);
   
   const handleSelect = (selectedIndex) => {
     setIndex(selectedIndex);
   };
+  
 
   return (
   <>
@@ -34,7 +39,7 @@ const HomePage = () => {
               <Card.Text>
                 Explore the latest models with advanced features and sleek designs.
               </Card.Text>
-              <Button variant="primary">View More</Button>
+              <Button variant="primary" onClick={() => navigateToPage('/latest-models')}>View More</Button>
             </Card.Body>
           </Card>
         </Col>
@@ -46,7 +51,7 @@ const HomePage = () => {
               <Card.Text>
                 Check out our best-selling mobile phones with top reviews.
               </Card.Text>
-              <Button variant="primary">View More</Button>
+              <Button variant="primary" onClick={() => navigateToPage('/latest-models')}>View More</Button>
             </Card.Body>
           </Card>
         </Col>
@@ -58,7 +63,7 @@ const HomePage = () => {
               <Card.Text>
                 Don't miss out on our special offers and discounts on selected models.
               </Card.Text>
-              <Button variant="primary">View More</Button>
+              <Button variant="primary" onClick={() => navigateToPage('/latest-models')}>View More</Button>
             </Card.Body>
           </Card>
         </Col>
