@@ -6,26 +6,34 @@ const ExampleCarouselImage = () => {
     return (
         <Carousel>
             <Carousel.Item>
-                <img
-                     style={{ width: '400px', height: '400px' }}
-                    src="https://images.unsplash.com/photo-1589492477829-5e65395b66cc?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTZ8fG1vYmlsZSUyMHBob25lfGVufDB8fDB8fHww"
-                    alt="First slide"
-                />
+  
+            <div style={{ display: 'flex', justifyContent: 'center', alignItems: 'center', height: '100%' }}>
+        <img
+            style={{ width: '500px', height: '700px' }}
+            src="https://images.unsplash.com/photo-1598770546586-9d9528db4922?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1yZWxhdGVkfDExfHx8ZW58MHx8fHx8"
+        />
+    </div>
+   
             </Carousel.Item>
             <Carousel.Item>
-                <img
-                    style={{ width: '400px', height: '400px' }}
-                    src="https://images.unsplash.com/photo-1523206489230-c012c64b2b48?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8N3x8cGhvbmV8ZW58MHx8MHx8fDA%3D"
-                    alt="Second slide"
-                />
+            <div style={{ display: 'flex', justifyContent: 'center', alignItems: 'center', height: '100%' }}>
+        <img
+            style={{ width: '500px', height: '700px' }}
+            src="https://images.unsplash.com/photo-1567910026630-08199077e732?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTV8fGlwaG9uZXN8ZW58MHx8MHx8fDA%3D"
+            alt="Third slide"
+        />
+    </div>
+
 
             </Carousel.Item>
             <Carousel.Item>
-                <img
-                    style={{ width: '400px', height: '400px' }}
-                    src="https://via.placeholder.com/800x400?text=Third+Slide"
-                    alt="Third slide"
-                />
+            <div style={{ display: 'flex', justifyContent: 'center', alignItems: 'center', height: '100%' }}>
+        <img
+            style={{ width: '500px', height: '700px' }}
+            src="https://images.unsplash.com/photo-1560699980-9dee78d1e874?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1yZWxhdGVkfDZ8fHxlbnwwfHx8fHw%3D"
+            alt="Third slide"
+        />
+    </div>
 
             </Carousel.Item>
         </Carousel>
