@@ -11,7 +11,7 @@ import NaviBar from './Components/NaviBar';
 import Footer from './Components/Footer';
 import Login from './Components/Login';
 import BestSellersPage from './Components/BestSellersPage';
-import NewArrivalsPage from './Components/NewArrivalsPage';
+import SpecialOffers from './Components/SpecialOffers';
 import LatestModelsPage from './Components/LatestModelsPage';
 
 
@@ -29,6 +29,7 @@ function App() {
         <Route path="/about" element={<AboutPage/>} />
         <Route path="/latest-models" element ={<LatestModelsPage/>} />
         <Route path="/best-sellers" element={<BestSellersPage/>} />
+        <Route path="/Special-Offers" element={<SpecialOffers/>} />
         
         </Routes>
         <Footer/>
