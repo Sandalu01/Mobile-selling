@@ -3,7 +3,7 @@ import { Container, Row, Col, Card } from 'react-bootstrap';
 
 const BestSellersPage = () => {
   return (
-    <Container className="mt-5">
+    <Container className="best">
       <Row className="mb-4">
         <Col>
           <h1>Best Sellers</h1>
