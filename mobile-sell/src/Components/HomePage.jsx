@@ -51,7 +51,7 @@ const HomePage = () => {
               <Card.Text>
                 Check out our best-selling mobile phones with top reviews.
               </Card.Text>
-              <Button variant="primary" onClick={() => navigateToPage('/latest-models')}>View More</Button>
+              <Button variant="primary" onClick={() => navigateToPage('/best-sellers')}>View More</Button>
             </Card.Body>
           </Card>
         </Col>
@@ -63,7 +63,7 @@ const HomePage = () => {
               <Card.Text>
                 Don't miss out on our special offers and discounts on selected models.
               </Card.Text>
-              <Button variant="primary" onClick={() => navigateToPage('/latest-models')}>View More</Button>
+              <Button variant="primary" onClick={() => navigateToPage('Special-Offers')}>View More</Button>
             </Card.Body>
           </Card>
         </Col>
