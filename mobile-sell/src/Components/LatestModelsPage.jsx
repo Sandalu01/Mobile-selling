@@ -1,5 +1,8 @@
 import React from 'react';
 import { Container, Row, Col, Card, Button} from 'react-bootstrap';
+import back1 from '../assets/Images/back1.jpg';
+import back2 from '../assets/Images/back2.jpg';
+import back3 from '../assets/Images/back3.jpg';
 
 const LatestModelsPage = () => {
   return (
@@ -14,7 +17,7 @@ const LatestModelsPage = () => {
         {/* Add content for latest models here */}
         <Col md={4}>
           <Card className="mb-4 shadow-sm">
-            <Card.Img variant="top" src="latest-model1.jpg" alt="Latest Model 1" />
+            <Card.Img variant="top" src={back1} alt="Latest Model 1" />
             <Card.Body>
               <Card.Title>Model 1</Card.Title>
               <Card.Text>
@@ -26,7 +29,7 @@ const LatestModelsPage = () => {
         </Col>
         <Col md={4}>
           <Card className="mb-4 shadow-sm">
-            <Card.Img variant="top" src="latest-model2.jpg" alt="Latest Model 2" />
+            <Card.Img variant="top" src="https://media.istockphoto.com/id/1507080527/photo/iphone-14-pro-max-backside-rear-view-with-camera-block-and-apple-logotype-isolated-on-white.jpg?s=612x612&w=0&k=20&c=U2-049YBkBrU-s0VPhrh3HNSAaJJ-TaYNqaL7-yAD2o=" alt="Latest Model 2" />
             <Card.Body>
               <Card.Title>Model 2</Card.Title>
               <Card.Text>
@@ -38,7 +41,7 @@ const LatestModelsPage = () => {
         </Col>
         <Col md={4}>
           <Card className="mb-4 shadow-sm">
-            <Card.Img variant="top" src="latest-model3.jpg" alt="Latest Model 3" />
+            <Card.Img variant="top" src="https://media.istockphoto.com/id/1308776367/photo/iphone-12-pro-max-pasific-blue.jpg?s=612x612&w=0&k=20&c=NLmtH3d4TgKYuhwvZ8gAuJY5r_CrcQH6JTHNAfTm7CM=" alt="Latest Model 3" />
             <Card.Body>
               <Card.Title>Model 3</Card.Title>
               <Card.Text>
