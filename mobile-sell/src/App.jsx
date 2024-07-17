@@ -13,6 +13,7 @@ import Login from './Components/Login';
 import BestSellersPage from './Components/BestSellersPage';
 import SpecialOffers from './Components/SpecialOffers';
 import LatestModelsPage from './Components/LatestModelsPage';
+import Payment from './Components/payment';
 
 
 function App() {
@@ -30,6 +31,7 @@ function App() {
         <Route path="/latest-models" element ={<LatestModelsPage/>} />
         <Route path="/best-sellers" element={<BestSellersPage/>} />
         <Route path="/Special-Offers" element={<SpecialOffers/>} />
+        <Route path="/payment" element={<Payment />} />
         
         </Routes>
         <Footer/>
