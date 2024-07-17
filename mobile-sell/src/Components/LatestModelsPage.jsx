@@ -1,10 +1,19 @@
 import React from 'react';
 import { Container, Row, Col, Card, Button} from 'react-bootstrap';
+import { useNavigate } from 'react-router-dom';
 import back1 from '../assets/Images/back1.jpg';
 import back2 from '../assets/Images/back2.jpg';
 import back3 from '../assets/Images/back3.jpg';
 
 const LatestModelsPage = () => {
+
+
+  const navigate = useNavigate();
+
+    const handleClick = () => {
+      
+    navigate('/payment');
+  };
   return (
     <Container className="latest-models-container">
       <Row className="mb-5 text-center">
@@ -23,7 +32,9 @@ const LatestModelsPage = () => {
               <Card.Text>
                 A brief description of the latest model goes here.
               </Card.Text>
-              <Button variant="primary">View Details</Button>
+              <Button variant="primary" onClick={handleClick}>
+      Buy
+              </Button>
             </Card.Body>
           </Card>
         </Col>
