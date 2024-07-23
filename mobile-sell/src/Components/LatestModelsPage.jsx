@@ -2,8 +2,6 @@ import React from 'react';
 import { Container, Row, Col, Card, Button} from 'react-bootstrap';
 import { useNavigate } from 'react-router-dom';
 import back1 from '../assets/Images/back1.jpg';
-import back2 from '../assets/Images/back2.jpg';
-import back3 from '../assets/Images/back3.jpg';
 
 const LatestModelsPage = () => {
 
