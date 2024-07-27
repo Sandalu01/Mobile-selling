@@ -14,7 +14,7 @@ const BestSellersPage = () => {
       {/* Add content for best sellers here */}
       <Col md={4}>
         <Card className="mb-4 shadow-sm">
-          <Card.Img variant="top" src="phone-image.jpg" alt="Best Seller Phone" />
+          <Card.Img variant="top" src="https://img.freepik.com/free-photo/happy-redhead-girl-showing-smartphone-screen-empty-phone-looking-amazed-checking-out-application-standing-white_176420-40075.jpg?size=626&ext=jpg&ga=GA1.1.1435214330.1722094459&semt=ais_user" alt="Best Seller Phone" />
           <Card.Body>
             <Card.Title>Phone Model 1</Card.Title>
             <Card.Text>
@@ -26,7 +26,7 @@ const BestSellersPage = () => {
       </Col>
       <Col md={4}>
         <Card className="mb-4 shadow-sm">
-          <Card.Img variant="top" src="phone-image.jpg" alt="Best Seller Phone" />
+          <Card.Img variant="top" src="https://img.freepik.com/free-photo/portrait-woman-red-shirt-round-eyeglasses_273609-41264.jpg?size=626&ext=jpg&ga=GA1.1.1435214330.1722094459&semt=ais_user" alt="Best Seller Phone" />
           <Card.Body>
             <Card.Title>Phone Model 2</Card.Title>
             <Card.Text>
@@ -38,7 +38,7 @@ const BestSellersPage = () => {
       </Col>
       <Col md={4}>
         <Card className="mb-4 shadow-sm">
-          <Card.Img variant="top" src="phone-image.jpg" alt="Best Seller Phone" />
+          <Card.Img variant="top" src="https://t3.ftcdn.net/jpg/03/15/31/58/240_F_315315898_dHWiHA3eAoWNeYPkqG86rVUCStoRo8pI.jpg" alt="Best Seller Phone" />
           <Card.Body>
             <Card.Title>Phone Model 3</Card.Title>
             <Card.Text>
