@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { Container, Row, Col, Card, Button, Alert } from 'react-bootstrap';
 import { useNavigate } from 'react-router-dom';
+import 'bootstrap/dist/css/bootstrap.min.css';
 
 const BuyButton = ({ onAddToCart }) => {
   const navigate = useNavigate();
@@ -25,6 +26,20 @@ const BuyButton = ({ onAddToCart }) => {
   );
 };
 
+const ProductCard = ({ product, onAddToCart }) => (
+  <Col md={4} className="mb-3">
+    <Card className="h-100">
+      <Card.Img variant="top" src={product.image} alt="Product Image" />
+      <Card.Body>
+        <Card.Title>{product.name}</Card.Title>
+        <Card.Text>{product.description}</Card.Text>
+        <Card.Text><strong>Price:</strong> {product.price}</Card.Text>
+        <BuyButton onAddToCart={onAddToCart} />
+      </Card.Body>
+    </Card>
+  </Col>
+);
+
 const Payment = () => {
   const [showAlert, setShowAlert] = useState(false);
 
@@ -33,51 +48,38 @@ const Payment = () => {
     setTimeout(() => setShowAlert(false), 3000); // Hide alert after 3 seconds
   };
 
+  const products = [
+    {
+      name: 'Product 1',
+      description: 'This is a detailed description of product 1.',
+      price: '$99.99',
+      image: 'https://via.placeholder.com/400x200'
+    },
+    {
+      name: 'Product 2',
+      description: 'This is a detailed description of product 2.',
+      price: '$199.99',
+      image: 'https://via.placeholder.com/400x200'
+    },
+    {
+      name: 'Product 3',
+      description: 'This is a detailed description of product 3.',
+      price: '$299.99',
+      image: 'https://via.placeholder.com/400x200'
+    }
+  ];
+
   return (
     <Container>
+      {showAlert && (
+        <Alert variant="success" onClose={() => setShowAlert(false)} dismissible>
+          Product added to cart!
+        </Alert>
+      )}
       <Row className="justify-content-start">
-        <Col md={4}>
-          {showAlert && (
-            <Alert variant="success" onClose={() => setShowAlert(false)} dismissible>
-              Product added to cart!
-            </Alert>
-          )}
-          <Card className="mt-3">
-            <Card.Img variant="top" src="https://via.placeholder.com/400x200" alt="Product Image" />
-            <Card.Body>
-              <Card.Title>Product Name</Card.Title>
-              <Card.Text>
-                This is a detailed description of the product. It has all the features and specifications you need to know before making a purchase.
-              </Card.Text>
-              <Card.Text>
-                <strong>Price:</strong> $99.99
-              </Card.Text>
-              <BuyButton onAddToCart={handleAddToCart} />
-            </Card.Body>
-          </Card>
-        </Col>
-      </Row>
-      <Row className="justify-content-center">
-        <Col md={4}>
-          {showAlert && (
-            <Alert variant="success" onClose={() => setShowAlert(false)} dismissible>
-              Product added to cart!
-            </Alert>
-          )}
-          <Card className="mt-3">
-            <Card.Img variant="top" src="https://via.placeholder.com/400x200" alt="Product Image" />
-            <Card.Body>
-              <Card.Title>Product Name</Card.Title>
-              <Card.Text>
-                This is a detailed description of the product. It has all the features and specifications you need to know before making a purchase.
-              </Card.Text>
-              <Card.Text>
-                <strong>Price:</strong> $99.99
-              </Card.Text>
-              <BuyButton onAddToCart={handleAddToCart} />
-            </Card.Body>
-          </Card>
-        </Col>
+        {products.map((product, index) => (
+          <ProductCard key={index} product={product} onAddToCart={handleAddToCart} />
+        ))}
       </Row>
     </Container>
   );
