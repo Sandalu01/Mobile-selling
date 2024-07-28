@@ -35,14 +35,36 @@ const Payment = () => {
 
   return (
     <Container>
-      <Row className="justify-content-center">
-        <Col md={8}>
+      <Row className="justify-content-start">
+        <Col md={4}>
           {showAlert && (
             <Alert variant="success" onClose={() => setShowAlert(false)} dismissible>
               Product added to cart!
             </Alert>
           )}
-          <Card className="mt-5">
+          <Card className="mt-3">
+            <Card.Img variant="top" src="https://via.placeholder.com/400x200" alt="Product Image" />
+            <Card.Body>
+              <Card.Title>Product Name</Card.Title>
+              <Card.Text>
+                This is a detailed description of the product. It has all the features and specifications you need to know before making a purchase.
+              </Card.Text>
+              <Card.Text>
+                <strong>Price:</strong> $99.99
+              </Card.Text>
+              <BuyButton onAddToCart={handleAddToCart} />
+            </Card.Body>
+          </Card>
+        </Col>
+      </Row>
+      <Row className="justify-content-center">
+        <Col md={4}>
+          {showAlert && (
+            <Alert variant="success" onClose={() => setShowAlert(false)} dismissible>
+              Product added to cart!
+            </Alert>
+          )}
+          <Card className="mt-3">
             <Card.Img variant="top" src="https://via.placeholder.com/400x200" alt="Product Image" />
             <Card.Body>
               <Card.Title>Product Name</Card.Title>
