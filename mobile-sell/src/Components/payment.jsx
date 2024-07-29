@@ -53,19 +53,19 @@ const Payment = () => {
       name: 'Product 1',
       description: 'This is a detailed description of product 1.',
       price: '$99.99',
-      image: 'https://via.placeholder.com/400x200'
+      image: 'https://img.freepik.com/free-vector/display-template-with-mobile-phones_79603-1245.jpg?size=626&ext=jpg&ga=GA1.1.1435214330.1722094459&semt=ais_user'
     },
     {
       name: 'Product 2',
       description: 'This is a detailed description of product 2.',
       price: '$199.99',
-      image: 'https://via.placeholder.com/400x200'
+      image: 'https://img.freepik.com/free-photo/ramadan-phone-14-screen-lantern-front-view-white-background_187299-35103.jpg?size=626&ext=jpg&ga=GA1.1.1435214330.1722094459&semt=ais_user'
     },
     {
       name: 'Product 3',
       description: 'This is a detailed description of product 3.',
       price: '$299.99',
-      image: 'https://via.placeholder.com/400x200'
+      image: 'https://img.freepik.com/free-photo/phone-14-front-side-arabic-themed-background_187299-35431.jpg?size=626&ext=jpg&ga=GA1.1.1435214330.1722094459&semt=ais_user'
     }
   ];
 
