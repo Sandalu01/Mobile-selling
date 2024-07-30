@@ -10,6 +10,8 @@ app.use('/api/items', itemsRouter);
 dotenv.config();
 
 const app = express();
+//edited fro chat gpt
+const PORT = 5001;
 
 // Middleware
 app.use(cors());
@@ -31,7 +33,8 @@ app.get('/', (req, res) => {
 });
 
 // Start the server
-const PORT = process.env.PORT || 5001;
+//edited fro chat gpt
+
 app.listen(PORT, () => {
     console.log(`Server running on port ${PORT}`);
 });
