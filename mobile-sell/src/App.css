@@ -143,3 +143,11 @@ p {
   height: 100vh;
 
 }
+
+.container{
+  background-image: url(); /* Path relative to the public directory */
+  background-size: cover; /* Cover the entire container */
+  background-position: center; /* Center the image */
+  background-repeat: no-repeat; /* Do not repeat the image */
+
+}
