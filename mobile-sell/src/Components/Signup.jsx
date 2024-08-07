@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { Form, Button, Container, Row, Col, Card } from 'react-bootstrap';
 import { Link } from 'react-router-dom';
+import axios from 'axios';
 import 'bootstrap/dist/css/bootstrap.min.css';
 
 const Signup = () => {
@@ -8,14 +9,21 @@ const Signup = () => {
   const [password, setPassword] = useState('');
   const [confirmPassword, setConfirmPassword] = useState('');
 
-  const handleSubmit = (event) => {
+  const handleSubmit = async (event) => {
     event.preventDefault();
     if (password !== confirmPassword) {
       alert('Passwords do not match');
       return;
     }
 
-    console.log('Email:', email, 'Password:', password);
+    try {
+      const res = await axios.post('http://localhost:4434/api/users/register', { email, password });
+      console.log(res.data);
+      alert('User registered successfully');
+    } catch (err) {
+      console.error(err);
+      alert('Error registering user');
+    }
   };
 
   return (
