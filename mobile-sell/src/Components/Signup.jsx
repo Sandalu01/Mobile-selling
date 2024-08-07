@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { Form, Button, Container, Row, Col, Card } from 'react-bootstrap';
-import { Link } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
+
 import axios from 'axios';
 import 'bootstrap/dist/css/bootstrap.min.css';
 
@@ -20,6 +21,7 @@ const Signup = () => {
       const res = await axios.post('http://localhost:4434/api/users/register', { email, password });
       console.log(res.data);
       alert('User registered successfully');
+      navigate('/'); // Redirect to the homepage
     } catch (err) {
       console.error(err);
       alert('Error registering user');
