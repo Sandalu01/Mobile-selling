@@ -45,7 +45,8 @@ const Payment = () => {
 
   const handleAddToCart = () => {
     setShowAlert(true);
-    setTimeout(() => setShowAlert(false), 3000); // Hide alert after 3 seconds
+    setTimeout(() => setShowAlert(false), 3000); 
+    // Hide alert after 3 seconds
   };
 
   const products = [
