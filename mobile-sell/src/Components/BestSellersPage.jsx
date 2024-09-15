@@ -11,7 +11,7 @@ const BestSellersPage = () => {
       </Col>
     </Row>
     <Row>
-      {/* Add content for best sellers here */}
+  
       <Col md={4}>
         <Card className="mb-4 shadow-sm">
           <Card.Img variant="top" src="https://img.freepik.com/free-photo/happy-redhead-girl-showing-smartphone-screen-empty-phone-looking-amazed-checking-out-application-standing-white_176420-40075.jpg?size=626&ext=jpg&ga=GA1.1.1435214330.1722094459&semt=ais_user" alt="Best Seller Phone" />

@@ -13,7 +13,6 @@ const ExampleCarouselImage = () => {
             src="https://images.unsplash.com/photo-1598770546586-9d9528db4922?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1yZWxhdGVkfDExfHx8ZW58MHx8fHx8"
         />
     </div>
-   
             </Carousel.Item>
             <Carousel.Item>
             <div style={{ display: 'flex', justifyContent: 'center', alignItems: 'center', height: '100%' }}>
