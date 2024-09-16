@@ -44,7 +44,6 @@ const Footer = () => {
         .social-icon {
           transition: transform 0.3s ease, color 0.3s ease;
         }
-
         .social-icon:hover {
           transform: translateY(-5px);
           color: #17a2b8;
@@ -53,7 +52,6 @@ const Footer = () => {
         a {
           text-decoration: none;
         }
-
         a:hover {
           text-decoration: underline;
         }
