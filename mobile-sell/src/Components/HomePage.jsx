@@ -1,73 +1,90 @@
 
-import React from 'react';
-import { useState } from 'react';
-
-import { Container, Row, Col, Card, Button,Carousel } from 'react-bootstrap';
+import React, { useState } from 'react';
+import { Container, Row, Col, Card, Button, Carousel } from 'react-bootstrap';
 import Accordion from 'react-bootstrap/Accordion';
-
 import ExampleCarouselImage from './ExampleCarouselImage';
 
+const cardData = [
+  {
+    id: 1,
+    title: 'Latest Models',
+    description: 'Explore the latest models with advanced features and sleek designs.',
+    image: 'https://media.istockphoto.com/id/827502902/photo/mobile-smartphone-in-electronic-store.jpg?s=612x612&w=0&k=20&c=G3jkr0uLHBR-c8Bi0405JvhL5F-sB7Ln-bYTRbqt3hw=',
+    url: '/latest-models',
+  },
+  {
+    id: 2,
+    title: 'Best Sellers',
+    description: 'Check out our best-selling mobile phones with top reviews.',
+    image: 'https://media.istockphoto.com/id/1974018816/photo/a-lot-of-smartphone-models-on-display-at-the-exhibition-stand-of-an-electronics-store.jpg?s=612x612&w=0&k=20&c=MXodjllbFmCKYQVV0fMQzZliIkm6-oH2X6gqugqAc7g=',
+    url: '/best-sellers',
+  },
+  {
+    id: 3,
+    title: 'Special Offers',
+    description: "Don't miss out on our special offers and discounts on selected models.",
+    image: 'https://img.freepik.com/free-psd/gradient-black-friday-template-design_23-2149706962.jpg?size=626&ext=jpg&ga=GA1.1.6752989.1717871726&semt=ais_user',
+    url: '/special-offers',
+  },
+  {
+    id: 1,
+    title: 'Latest Models',
+    description: 'Explore the latest models with advanced features and sleek designs.',
+    image: 'https://media.istockphoto.com/id/827502902/photo/mobile-smartphone-in-electronic-store.jpg?s=612x612&w=0&k=20&c=G3jkr0uLHBR-c8Bi0405JvhL5F-sB7Ln-bYTRbqt3hw=',
+    url: '/latest-models',
+  },
+  {
+    id: 1,
+    title: 'Latest Models',
+    description: 'Explore the latest models with advanced features and sleek designs.',
+    image: 'https://media.istockphoto.com/id/827502902/photo/mobile-smartphone-in-electronic-store.jpg?s=612x612&w=0&k=20&c=G3jkr0uLHBR-c8Bi0405JvhL5F-sB7Ln-bYTRbqt3hw=',
+    url: '/latest-models',
+  },
+  {
+    id: 1,
+    title: 'Latest Models',
+    description: 'Explore the latest models with advanced features and sleek designs.',
+    image: 'https://media.istockphoto.com/id/827502902/photo/mobile-smartphone-in-electronic-store.jpg?s=612x612&w=0&k=20&c=G3jkr0uLHBR-c8Bi0405JvhL5F-sB7Ln-bYTRbqt3hw=',
+    url: '/latest-models',
+  },
+];
+
 const HomePage = () => {
-
-    const navigateToPage = (url) => {
-    window.location.href = url;
-  };
-
   const [index, setIndex] = useState(0);
-  
+
   const handleSelect = (selectedIndex) => {
     setIndex(selectedIndex);
   };
-  
+
+  const navigateToPage = (url) => {
+    window.location.href = url;
+  };
 
   return (
-  <>
-   
-    <Container className="mt-5">
-      <Row className="mb-4 ">
-        <Col>
-          <h1>Welcome to Sandalu's Store 😊</h1>
-          <p>Your one-stop shop for the latest mobile phones.</p>
-        </Col>
-      </Row>
-      <Row>
-        <Col md={4}>
-          <Card>
-            <Card.Img variant="top" src="https://media.istockphoto.com/id/827502902/photo/mobile-smartphone-in-electronic-store.jpg?s=612x612&w=0&k=20&c=G3jkr0uLHBR-c8Bi0405JvhL5F-sB7Ln-bYTRbqt3hw=" />
-            <Card.Body>
-              <Card.Title>Latest Models</Card.Title>
-              <Card.Text>
-                Explore the latest models with advanced features and sleek designs.
-              </Card.Text>
-              <Button variant="primary" onClick={() => navigateToPage('/latest-models')}>View More</Button>
-            </Card.Body>
-          </Card>
-        </Col>
-        <Col md={4}>
-          <Card>
-            <Card.Img variant="top" src="https://media.istockphoto.com/id/1974018816/photo/a-lot-of-smartphone-models-on-display-at-the-exhibition-stand-of-an-electronics-store.jpg?s=612x612&w=0&k=20&c=MXodjllbFmCKYQVV0fMQzZliIkm6-oH2X6gqugqAc7g=" />
-            <Card.Body>
-              <Card.Title>Best Sellers</Card.Title>
-              <Card.Text>
-                Check out our best-selling mobile phones with top reviews.
-              </Card.Text>
-              <Button variant="primary" onClick={() => navigateToPage('/best-sellers')}>View More</Button>
-            </Card.Body>
-          </Card>
-        </Col>
-        <Col md={4}>
-          <Card>
-            <Card.Img variant="top" src="https://img.freepik.com/free-psd/gradient-black-friday-template-design_23-2149706962.jpg?size=626&ext=jpg&ga=GA1.1.6752989.1717871726&semt=ais_user" />
-            <Card.Body>
-              <Card.Title>Special Offers</Card.Title>
-              <Card.Text>
-                Don't miss out on our special offers and discounts on selected models.
-              </Card.Text>
-              <Button variant="primary" onClick={() => navigateToPage('Special-Offers')}>View More</Button>
-            </Card.Body>
-          </Card>
-        </Col>
-      </Row>
+    <>
+      <Container className="mt-5">
+        <Row className="mb-4">
+          <Col>
+            <h1>Welcome to Sandalu's Store 😊</h1>
+            <p>Your one-stop shop for the latest mobile phones.</p>
+          </Col>
+        </Row>
+        <Row>
+          {cardData.map(({ id, title, description, image, url }) => (
+            <Col md={4} key={id}>
+              <Card>
+                <Card.Img variant="top" src={image} alt={title} />
+                <Card.Body>
+                  <Card.Title>{title}</Card.Title>
+                  <Card.Text>{description}</Card.Text>
+                  <Button variant="primary" onClick={() => navigateToPage(url)}>
+                    View More
+                  </Button>
+                </Card.Body>
+              </Card>
+            </Col>
+          ))}
+        </Row>
    
      <Accordion defaultActiveKey="0" className='mt-5'>
      <Accordion.Item eventKey="0">
