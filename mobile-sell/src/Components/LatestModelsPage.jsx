@@ -59,33 +59,7 @@ const models = [
     buttonText: "View Details",
     handleClick: () => {},
   },
-  {
-    id: 3,
-    imgSrc: "https://media.istockphoto.com/id/1308776367/photo/iphone-12-pro-max-pasific-blue.jpg?s=612x612&w=0&k=20&c=NLmtH3d4TgKYuhwvZ8gAuJY5r_CrcQH6JTHNAfTm7CM=",
-    alt: "Latest Model 3",
-    title: "Model 3",
-    description: "A brief description of the latest model goes here.",
-    buttonText: "View Details",
-    handleClick: () => {},
-  },
-  {
-    id: 3,
-    imgSrc: "https://media.istockphoto.com/id/1308776367/photo/iphone-12-pro-max-pasific-blue.jpg?s=612x612&w=0&k=20&c=NLmtH3d4TgKYuhwvZ8gAuJY5r_CrcQH6JTHNAfTm7CM=",
-    alt: "Latest Model 3",
-    title: "Model 3",
-    description: "A brief description of the latest model goes here.",
-    buttonText: "View Details",
-    handleClick: () => {},
-  },
-  {
-    id: 3,
-    imgSrc: "https://media.istockphoto.com/id/1308776367/photo/iphone-12-pro-max-pasific-blue.jpg?s=612x612&w=0&k=20&c=NLmtH3d4TgKYuhwvZ8gAuJY5r_CrcQH6JTHNAfTm7CM=",
-    alt: "Latest Model 3",
-    title: "Model 3",
-    description: "A brief description of the latest model goes here.",
-    buttonText: "View Details",
-    handleClick: () => {},
-  },
+
 ];
 
 const LatestModelsPage = () => {

@@ -63,7 +63,7 @@ const HomePage = () => {
   return (
     <>
       <Container className="mt-5">
-        <Row className="mb-4">
+        <Row className="mb-5">
           <Col>
             <h1>Welcome to Sandalu's Store 😊</h1>
             <p>Your one-stop shop for the latest mobile phones.</p>
@@ -72,7 +72,7 @@ const HomePage = () => {
         <Row>
           {cardData.map(({ id, title, description, image, url }) => (
             <Col md={4} key={id}>
-              <Card>
+              <Card className='mb-4 shadow-sm' >
                 <Card.Img variant="top" src={image} alt={title} />
                 <Card.Body>
                   <Card.Title>{title}</Card.Title>

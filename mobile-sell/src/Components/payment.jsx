@@ -67,6 +67,12 @@ const Payment = () => {
       description: 'This is a detailed description of product 3.',
       price: '$299.99',
       image: 'https://img.freepik.com/free-photo/phone-14-front-side-arabic-themed-background_187299-35431.jpg?size=626&ext=jpg&ga=GA1.1.1435214330.1722094459&semt=ais_user'
+    },
+    {
+      name: 'Product 3',
+      description: 'This is a detailed description of product 3.',
+      price: '$299.99',
+      image: 'https://img.freepik.com/free-photo/phone-14-front-side-arabic-themed-background_187299-35431.jpg?size=626&ext=jpg&ga=GA1.1.1435214330.1722094459&semt=ais_user'
     }
   ];
 
