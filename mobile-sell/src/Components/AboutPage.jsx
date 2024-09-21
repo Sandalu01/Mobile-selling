@@ -1,7 +1,7 @@
 import React from "react";
 import { Container, Row, Col, Card, Image } from "react-bootstrap";
 import "bootstrap/dist/css/bootstrap.min.css";
-
+import teamImage from "../assets/Images/team.jpg"; // Replace with your actual image
 
 const AboutUs = () => {
   return (
@@ -32,7 +32,7 @@ const AboutUs = () => {
         </Col>
       </Row>
 
-      <Row className="justify-content-md-center mb-5">
+      {/* <Row className="justify-content-md-center mb-4">
         <Col md="8">
           <Card className="p-4 shadow-lg">
             <Card.Body>
@@ -52,7 +52,7 @@ const AboutUs = () => {
             </Card.Body>
           </Card>
         </Col>
-      </Row>
+      </Row> */}
 
       <Row className="justify-content-md-center mb-5">
         <Col md="8">
