@@ -1,32 +1,75 @@
 import React from "react";
-import { Container, Row, Col, Card } from "react-bootstrap";
+import { Container, Row, Col, Card, Image } from "react-bootstrap";
 import "bootstrap/dist/css/bootstrap.min.css";
 
 
 const AboutUs = () => {
   return (
-    <Container className="about-us">
-      <Row className="justify-content-md-center">
+    <Container className="about-us mt-5">
+      <Row className="text-center mb-5">
+        <Col>
+          <h1 className="display-4">Our Journey</h1>
+          <p className="lead">From passion to innovation, we're here to revolutionize the mobile industry!</p>
+        </Col>
+      </Row>
+
+      <Row className="justify-content-md-center mb-4">
         <Col md="8">
-          <Card>
+          <Card className="p-4 shadow-lg">
             <Card.Body>
-              <Card.Title>About Us</Card.Title>
+              <Card.Title className="text-center mb-4">About MobileMart</Card.Title>
+              <Card.Text className="text-justify">
+                Welcome to <strong>MobileMart</strong>, your premier destination for cutting-edge mobile technology! 
+                Our mission is to provide reliable, high-quality mobile devices that fit your unique lifestyle. 
+                At MobileMart, we blend innovation with exceptional customer service to bring you a seamless experience.
+              </Card.Text>
+              <Card.Text className="text-justify">
+                Founded in 2024, MobileMart was born out of a passion for technology and a vision to push boundaries. 
+                We believe in bringing the future into your hands, one mobile device at a time.
+              </Card.Text>
+            </Card.Body>
+          </Card>
+        </Col>
+      </Row>
+
+      <Row className="justify-content-md-center mb-5">
+        <Col md="8">
+          <Card className="p-4 shadow-lg">
+            <Card.Body>
+              <Card.Title className="text-center mb-4">Our Story</Card.Title>
               <Card.Text>
-                Welcome to MobileMart, your number one source for all things mobile. 
-                We're dedicated to giving you the very best of mobile devices, with a focus on dependability, customer service, and uniqueness.
+                <strong>2024:</strong> MobileMart begins its journey. A dream fueled by a desire to make innovative mobile devices accessible worldwide.
               </Card.Text>
               <Card.Text>
-                Founded in 2024, MobileMart has come a long way from its beginnings. 
-                When we first started out, our passion for eco-friendly cleaning products drove us to do tons of research, so that MobileMart can offer you the world's most advanced mobiles. 
-                We now serve customers all over the world and are thrilled that we're able to turn our passion into our own website.
+                <strong>2025:</strong> We launch our first range of eco-friendly mobile accessories, integrating sustainability into our technology.
               </Card.Text>
               <Card.Text>
-                We hope you enjoy our products as much as we enjoy offering them to you. 
-                If you have any questions or comments, please don't hesitate to contact us.
+                <strong>2026:</strong> MobileMart expands globally, reaching customers across continents and breaking new grounds in mobile technology.
               </Card.Text>
               <Card.Text>
-                Sincerely,<br />
-                MobileMart Team
+                Today, we continue to grow, adapting to the ever-changing technological landscape while staying true to our core values: innovation, quality, and customer satisfaction.
+              </Card.Text>
+            </Card.Body>
+          </Card>
+        </Col>
+      </Row>
+
+      <Row className="justify-content-md-center mb-5">
+        <Col md="8">
+          <Card className="text-center p-4 shadow-lg">
+            <Image src={teamImage} roundedCircle fluid className="mb-3" alt="Our Team" />
+            <Card.Body>
+              <Card.Title>Meet Our Team</Card.Title>
+              <Card.Text>
+                At MobileMart, we’re not just a company; we’re a family of tech enthusiasts, innovators, and customer-first thinkers. 
+                Our team is dedicated to making your experience with us extraordinary.
+              </Card.Text>
+              <Card.Text>
+                Whether you're here to shop for the latest gadgets or simply explore, we're excited to have you with us on this journey!
+              </Card.Text>
+              <Card.Text>
+                <strong>Sincerely,</strong><br />
+                The MobileMart Team
               </Card.Text>
             </Card.Body>
           </Card>
