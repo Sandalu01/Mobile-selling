@@ -6,7 +6,7 @@ import './App.css'
 import 'bootstrap/dist/css/bootstrap.min.css';
 import HomePage from './Components/HomePage';
 import Signup from './Components/Signup';
-import AboutPage from './Components/AboutPage';
+import AboutPage from './Components/Aboutus';
 import NaviBar from './Components/NaviBar';
 import Footer from './Components/Footer';
 import Login from './Components/Login';

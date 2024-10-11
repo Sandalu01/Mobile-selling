@@ -29,8 +29,8 @@ const Footer = () => {
           <Col className="text-center">
             <h6>Contact Us</h6>
             <p>123 Main Street, Colombo, Sri Lanka</p>
-            <p>Email: <a href="mailto:info@mymobilestore.com" className="text-white">info@mymobilestore.com</a></p>
-            <p>Phone: <a href="tel:+94123456789" className="text-white">+94 123 456 789</a></p>
+            <p>Email: <a href="mailto:info@mymobilestore.com" className="text-white">sandaluthushan20@gmailcom</a></p>
+            <p>Phone: <a href="tel:+94123456789" className="text-white">+94 76 1136338</a></p>
           </Col>
         </Row>
         <Row className="mt-4">
