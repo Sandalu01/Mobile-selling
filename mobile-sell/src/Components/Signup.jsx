@@ -21,10 +21,29 @@ const Signup = () => {
       return;
     }
 
+  
+
+
     
 
     try {
-      const res = await axios.post('http://localhost:1332/api/signup', { email, password });
+      const res = await axios.post('http://localhost:1332/api/signup', { 
+        
+        headers: {
+
+          'Content-Type':'application/json',
+      },
+      
+      body: JSON.stringify({
+        name,
+        email,
+        password,
+    }),
+        
+        
+        // email, password
+      
+      });
       console.log(res.data);
       alert('User registered successfully');
       navigate('/'); // Redirect to the homepage
