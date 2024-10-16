@@ -6,19 +6,25 @@ import axios from 'axios';
 import 'bootstrap/dist/css/bootstrap.min.css';
 
 const Signup = () => {
+
+
+  const [name, setName] = useState('');
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
   const [confirmPassword, setConfirmPassword] = useState('');
 
   const handleSubmit = async (event) => {
     event.preventDefault();
+
     if (password !== confirmPassword) {
       alert('Passwords do not match');
       return;
     }
 
+    
+
     try {
-      const res = await axios.post('http://localhost:4434/api/users/register', { email, password });
+      const res = await axios.post('http://localhost:1332/api/signup', { email, password });
       console.log(res.data);
       alert('User registered successfully');
       navigate('/'); // Redirect to the homepage
@@ -36,6 +42,18 @@ const Signup = () => {
             <Card.Body>
               <h2 className="mb-4 text-center">Sign Up</h2>
               <Form onSubmit={handleSubmit}>
+
+              <Form.Group controlId="formBasicName">
+                  <Form.Label>Name</Form.Label>
+                  <Form.Control 
+                    type="Name" 
+                    placeholder="Enter name" 
+                    value={name}
+                    onChange={(e) => setName(e.target.value)}
+                    required
+                  />
+                </Form.Group>
+
                 <Form.Group controlId="formBasicEmail">
                   <Form.Label>Email address</Form.Label>
                   <Form.Control 
